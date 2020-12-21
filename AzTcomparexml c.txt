@@ -1,0 +1,18 @@
+<Customers>
+ <Customer Id ="1" Name="ashish" Country="India">
+    <Name>John Hammond</Name>
+    <Country>United States</Country>
+ </Customer>
+ <Customer Id = "2" Name="abc" Country="US">
+    <Name>Mudassar Khan</Name>
+    <Country>India</Country>
+ </Customer>
+    <Customer Id ="3" Name="def" Country="India">
+    <Name>Suzanne Mathews</Name>
+    <Country>France</Country>
+ </Customer>
+    <Customer Id ="4" Name="gk" Country="India">
+    <Name>Robert Schidner</Name>
+    <Country>Russia</Country>
+ </Customer>
+</Customers>
