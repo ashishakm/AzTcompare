@@ -25,7 +25,8 @@ namespace AzTcompare
             FileUpload1.SaveAs(filePath);
             string xml = File.ReadAllText(filePath);
             WebService1 uploadFile = new WebService1();
-            uploadFile.UploadData(xml);
+          var returnValue=  uploadFile.UploadData(xml, "samplekey");
+             
         }
 
         protected void fileupload()

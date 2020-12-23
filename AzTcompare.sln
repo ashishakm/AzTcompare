@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzTcompare", "AzTcompare\AzTcompare.csproj", "{46D5D52C-8453-4540-BA65-121FC47330BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "windowAppClient", "windowAppClient\windowAppClient.csproj", "{5F7CBF8A-4425-4008-BC1E-87550AF6D63A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{46D5D52C-8453-4540-BA65-121FC47330BE} = {46D5D52C-8453-4540-BA65-121FC47330BE}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{46D5D52C-8453-4540-BA65-121FC47330BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46D5D52C-8453-4540-BA65-121FC47330BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46D5D52C-8453-4540-BA65-121FC47330BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F7CBF8A-4425-4008-BC1E-87550AF6D63A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F7CBF8A-4425-4008-BC1E-87550AF6D63A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F7CBF8A-4425-4008-BC1E-87550AF6D63A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F7CBF8A-4425-4008-BC1E-87550AF6D63A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -22,12 +22,21 @@ namespace AzTcompare
     {
 
         [WebMethod]
-        public bool UploadData(string xmldata)
+        public bool UploadData(string xmldata, string key)
         {
+            string keyValue = "samplekey";
             try
             {
-                UploadXML(xmldata);
-                return true;
+                if (key == keyValue)
+                {
+                    UploadXML(xmldata);
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+                
             }
             catch (Exception ex)
             {
@@ -44,7 +53,7 @@ namespace AzTcompare
             string constr = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
             using (SqlConnection con = new SqlConnection(constr))
             {
-                using (SqlCommand cmd = new SqlCommand("Sp_InsertAZTc_Query1"))
+                using (SqlCommand cmd = new SqlCommand("Sp_InsertAZTc_Query"))
                 {
                     cmd.Connection = con;
                     cmd.CommandType = CommandType.StoredProcedure;
